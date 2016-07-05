@@ -1,0 +1,7 @@
+[user]
+	name = Jonathan Chouraki
+	email = jonathan.chouraki@gmail.com
+[core]
+	editor = vim
+[push]
+	default = simple
