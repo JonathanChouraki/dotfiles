@@ -1,7 +1,6 @@
 program to install with apt-get:
 git
 zsh
-ohmyzsh
 vim
 feh
 lxappearance
