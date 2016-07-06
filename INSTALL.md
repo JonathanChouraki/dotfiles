@@ -7,6 +7,7 @@ feh
 lxappearance
 compton
 rofi
+i3
 i3blocks
 tmux
 
