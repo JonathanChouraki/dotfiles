@@ -11,6 +11,7 @@ i3blocks
 tmux
 
 git:
+base16-shell
 ohmyzsh
 vundle
 font awesome
