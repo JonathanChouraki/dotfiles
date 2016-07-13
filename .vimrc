@@ -33,7 +33,7 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set visualbell
+set novisualbell
 set cursorline
 set ttyfast
 set ruler
@@ -49,6 +49,9 @@ set showmatch
 set hlsearch
 set autoindent " automatically set indent of new line
 set smartindent
+set guioptions -=m
+set guioptions -=T
+set guioptions -=r
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
