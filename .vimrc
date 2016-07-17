@@ -1,4 +1,4 @@
-set rtp+=~/.vim/bundle/Vundle.vim
+    set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
@@ -33,13 +33,14 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set novisualbell
+set visualbell
 set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
+set number
 set undofile
 set ignorecase
 set smartcase
@@ -49,9 +50,6 @@ set showmatch
 set hlsearch
 set autoindent " automatically set indent of new line
 set smartindent
-set guioptions -=m
-set guioptions -=T
-set guioptions -=r
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
