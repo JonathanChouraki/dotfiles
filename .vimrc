@@ -86,7 +86,9 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 " open vertical split
-nnoremap <leader>s <C-w>v<C-w>l
+nnoremap <leader>s :vsplit <cr>
+" open horizontal split
+nnoremap <leader>h :split <cr>
 " open tab
 nnoremap <leader>t :tabnew <cr>
 if has('mouse')
