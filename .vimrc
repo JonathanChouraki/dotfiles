@@ -21,6 +21,7 @@ Plugin 'StanAngeloff/php.vim'
 call vundle#end()
 filetype plugin indent on
 
+" Editor configuration
 set nocompatible
 set modelines=0
 set tabstop=4
@@ -57,8 +58,12 @@ set guioptions-=t
 set guioptions-=T
 set guioptions-=r
 set guioptions-=L
+
+" Keybind
 let mapleader = ","
+" desactivate higlight
 nnoremap <leader><space> :noh<cr>
+" move to the corresponding parens, curly brace, etc
 nnoremap <tab> %
 vnoremap <tab> %
 nnoremap <up> <nop>
@@ -76,12 +81,14 @@ nmap gh <C-w>h
 nmap gj <C-w>j
 nmap gk <C-w>k
 nmap gl <C-w>l
-au FocusLost * :wa
-nnoremap <leader>w <C-w>v<C-w>l
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
+" open vertical split
+nnoremap <leader>s <C-w>v<C-w>l
+" open tab
+nnoremap <leader>t :tabnew <cr>
 if has('mouse')
 	set mouse=a
 	set ttymouse=xterm2
@@ -90,7 +97,7 @@ let base16colorspace=256
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 execute "set background=dark"
 execute "colorscheme base16-railscasts"
-"NerdTree binded to ctrl-n
+"NerdTree binded o ctrl-n
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:ctrlp_map = '<c-p>'
