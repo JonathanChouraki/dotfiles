@@ -29,6 +29,11 @@
   (use-package evil-indent-textobject
     :ensure t))
 
+(use-package firebelly-them
+     :ensure t
+     :config
+     (load-theme 'firebelly t))
+
 ;; Essential settings.
 (setq inhibit-splash-screen t
       inhibit-startup-message t
