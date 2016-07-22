@@ -18,6 +18,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'godlygeek/csapprox'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'StanAngeloff/php.vim'
+Plugin 'itchyny/lightline.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -31,7 +32,7 @@ set expandtab
 set encoding=utf-8
 set scrolloff=3
 set autoindent
-set showmode
+set noshowmode
 set showcmd
 set hidden
 set wildmenu
@@ -99,9 +100,18 @@ let base16colorspace=256
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 execute "set background=dark"
 execute "colorscheme base16-railscasts"
+set guifont=Inconsolata\ for\ Powerline\ Medium\ 12
 "NerdTree binded o ctrl-n
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }

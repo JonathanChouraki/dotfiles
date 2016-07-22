@@ -38,3 +38,6 @@ https://snwh.org/moka
 sudo add-apt-repository ppa:moka/daily
 sudo apt-get update
 sudo apt-get install moka-icon-theme
+
+Patched Font for status line:
+https://github.com/powerline/fonts
