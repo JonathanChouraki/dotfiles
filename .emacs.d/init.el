@@ -5,34 +5,20 @@
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 
 (setq package-enable-at-startup nil)
+
+;; register files in lisp directory
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+
 (package-initialize)
 
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
 (package-install 'use-package))
 
-(use-package evil
-  :ensure t
-  :config
-  (evil-mode 1)
-
-  (use-package evil-leader
-    :ensure t
-    :config
-    (global-evil-leader-mode))
-
-  (use-package evil-surround
-    :ensure t
-    :config
-    (global-evil-surround-mode))
-
-  (use-package evil-indent-textobject
-    :ensure t))
-
-(use-package firebelly-them
+(use-package railscasts-theme
      :ensure t
      :config
-     (load-theme 'firebelly t))
+     (load-theme 'railscasts t))
 
 ;; Essential settings.
 (setq inhibit-splash-screen t
@@ -42,6 +28,5 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (show-paren-mode 1)
-(setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
-(setq-default left-fringe-width nil)
-(load-theme 'firebelly t)
+
+(require 'init-evil)

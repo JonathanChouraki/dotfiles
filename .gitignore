@@ -1,0 +1,6 @@
+elpa/
+*.el~
+*.un~
+*.swp
+auto-save-list/
+games/
