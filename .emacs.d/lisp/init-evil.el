@@ -8,6 +8,8 @@
     ;(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
     ;(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
     ;(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+    (define-key evil-normal-state-map (kbd "gt") 'elscreen-next)
+    (define-key evil-normal-state-map (kbd "gT") 'elscreen-previous)
     (define-key evil-normal-state-map (kbd "gl") 'windmove-right)
     (define-key evil-normal-state-map (kbd "gh") 'windmove-left)
     (define-key evil-normal-state-map (kbd "gk") 'windmove-up)
@@ -17,6 +19,8 @@
 (defun my/evil-leader-config ()
   "my evil leader configuration"
     (evil-leader/set-leader ",")
+    (evil-leader/set-key "t" 'elscreen-create)
+    (evil-leader/set-key "q" 'elscreen-kill)
     (evil-leader/set-key "s" 'split-window-right)
     (evil-leader/set-key "h" 'split-window-below))
 
@@ -29,8 +33,8 @@
 (use-package evil
   :ensure t
   :config
+  (add-hook 'evil-mode-hook 'my/evil-config)
   (evil-mode 1)
-  (my/evil-config)
 
   (use-package evil-surround
     :ensure t

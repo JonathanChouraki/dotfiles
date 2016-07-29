@@ -15,11 +15,20 @@
   (package-refresh-contents)
 (package-install 'use-package))
 
+(use-package linum-relative
+  :ensure t
+  :config
+  (linum-relative-global-mode))
+
 (use-package railscasts-theme
      :ensure t
      :config
      (load-theme 'railscasts t))
 
+(use-package elscreen
+  :ensure t
+  :config
+  (elscreen-start))
 ;; Essential settings.
 (setq inhibit-splash-screen t
       inhibit-startup-message t
