@@ -20,13 +20,5 @@
      :config
      (load-theme 'railscasts t))
 
-;; Essential settings.
-(setq inhibit-splash-screen t
-      inhibit-startup-message t
-      inhibit-startup-echo-area-message t)
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(show-paren-mode 1)
-
+(require 'init-global)
 (require 'init-evil)
