@@ -18,4 +18,7 @@
 (scroll-bar-mode -1)
 (show-paren-mode 1)
 
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4) 
+
 (provide 'init-global)
