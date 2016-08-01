@@ -29,6 +29,7 @@
   :ensure t
   :config
   (elscreen-start))
+
 ;; Essential settings.
 (setq inhibit-splash-screen t
       inhibit-startup-message t
@@ -38,4 +39,5 @@
 (scroll-bar-mode -1)
 (show-paren-mode 1)
 
+(require 'init-global)
 (require 'init-evil)
