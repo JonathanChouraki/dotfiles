@@ -13,31 +13,8 @@
 
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
-(package-install 'use-package))
-
-(use-package linum-relative
-  :ensure t
-  :config
-  (linum-relative-global-mode))
-
-(use-package railscasts-theme
-     :ensure t
-     :config
-     (load-theme 'railscasts t))
-
-(use-package elscreen
-  :ensure t
-  :config
-  (elscreen-start))
-
-;; Essential settings.
-(setq inhibit-splash-screen t
-      inhibit-startup-message t
-      inhibit-startup-echo-area-message t)
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(show-paren-mode 1)
+  (package-install 'use-package))
 
 (require 'init-global)
+(require 'init-php)
 (require 'init-evil)

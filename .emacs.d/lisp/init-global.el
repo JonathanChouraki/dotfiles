@@ -1,4 +1,8 @@
-;; Essential settings.
+(use-package railscasts-theme
+  :ensure t
+  :config
+  (load-theme 'railscasts t))
+
 (use-package linum-relative
   :ensure t
   :config
@@ -8,6 +12,16 @@
   :ensure t
   :config
   (elscreen-start))
+
+(use-package helm
+  :ensure t
+  :config
+  (helm-mode 1))
+
+(use-package org-bullets
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
 (set-frame-font "Inconsolata 12")
 (setq inhibit-splash-screen t
