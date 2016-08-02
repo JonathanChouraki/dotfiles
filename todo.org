@@ -1,0 +1,13 @@
+* Todo
+
+** Emacs
+*** TODO Install and configure autocompletion
+*** TODO look at gtags
+*** TODO TODO look at projectile
+*** TODO better visual configuration 
+*** TODO better helm integration
+*** TODO look to an alternative to nerdtree (cf neotree)
+*** TODO try to find a way to extract keybinding into their own file
+
+** Misc
+*** TODO Improve install.sh to determine path at runtime
