@@ -9,5 +9,8 @@
 *** TODO look to an alternative to nerdtree (cf neotree)
 *** TODO try to find a way to extract keybinding into their own file
 
+*** TODO try to find a similar keybind to vim tab current behavior
+*** TODO Aggressive indent
+
 ** Misc
 *** TODO Improve install.sh to determine path at runtime
