@@ -1,0 +1,73 @@
+set nocompatible
+set modelines=0
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set cursorline
+set novisualbell
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+set relativenumber
+set number
+set undofile
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+set autoindent " automatically set indent of new line
+set smartindent
+set guioptions-=m
+set guioptions-=t
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
+" Keybind
+let mapleader = ","
+" desactivate higlight
+nnoremap <leader><space> :noh<cr>
+" move to the corresponding parens, curly brace, etc
+nnoremap <tab> %
+vnoremap <tab> %
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+" shortcut to move between buffers
+nmap gh <C-w>h
+nmap gj <C-w>j
+nmap gk <C-w>k
+nmap gl <C-w>l
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+" open vertical split
+nnoremap <leader>s :vsplit <cr>
+" open horizontal split
+nnoremap <leader>h :split <cr>
+" open tab
+nnoremap <leader>t :tabnew <cr>
+" open split below and right 
+set splitbelow
+set splitright
+set surround
