@@ -20,6 +20,8 @@ Plugin 'godlygeek/csapprox'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'othree/yajs.vim'
+Plugin 'vim-scripts/vim-auto-save'
 call vundle#end()
 filetype plugin indent on
 
@@ -100,6 +102,8 @@ set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 execute "set background=dark"
 execute "colorscheme base16-railscasts"
 set guifont=Inconsolata\ for\ Powerline\ Medium\ 12
+" active autosave plugin on startup
+let g:auto_save = 1
 "NerdTree binded o ctrl-n
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
