@@ -102,8 +102,9 @@ set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 execute "set background=dark"
 execute "colorscheme base16-railscasts"
 set guifont=Inconsolata\ for\ Powerline\ Medium\ 12
-" active autosave plugin on startup
-let g:auto_save = 1
+let g:auto_save = 1 " active autosave plugin on startup
+let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
+let g:auto_save_silent = 1  " do not display the auto-save notification
 "NerdTree binded o ctrl-n
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
