@@ -1,7 +1,7 @@
 program to install with apt-get:
 git
 zsh
-vim
+neovim
 feh
 lxappearance
 compton
