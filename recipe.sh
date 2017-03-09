@@ -46,7 +46,7 @@ echo "i3"
 ln -s $HOME/dotfiles/.config/i3/ $HOME/.config/
 
 echo "Zsh"
-ln -s $HOME/dotfiles/.zshrc $HOME/.zshrm
+ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc
 
 echo "Vimperator"
 ln -s $HOME/dotfiles/.vimperatorrc $HOME/.vimperatorrc
