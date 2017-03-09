@@ -61,6 +61,9 @@ cp -R $HOME/dotfiles/.fonts $HOME/.fonts
 echo "Wallpaper"
 cp $HOME/dotfiles/Pictures/fallout.jpg $HOME/Pictures/fallout.jpg
 
+echo "Fixing right"
+chown -R pixelcake:pixelcake ~/.local
+
 echo "Done! Here is what is left to do:"
 echo " - set the font for the terminal"
 echo " - set theme and icon in lxappearance"
