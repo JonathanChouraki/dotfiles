@@ -19,9 +19,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "Base16-shell"
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 
-echo "OhMyZsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 echo "Powerline fonts"
 git clone https://github.com/powerline/fonts $HOME/fonts
 $HOME/fonts/install.sh
@@ -69,3 +66,6 @@ echo " - set the font for the terminal"
 echo " - set theme and icon in lxappearance"
 echo " - log into i3, but do not create the config file"
 echo " - installing vimperator and firefox theme https://addons.mozilla.org/en-US/firefox/collections/horst3180/a/"
+
+echo "Moving to OhMyZsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
