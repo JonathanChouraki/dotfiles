@@ -86,6 +86,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 bindkey -v
 export KEYTIMEOUT=1
