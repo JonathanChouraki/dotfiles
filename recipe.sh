@@ -58,6 +58,9 @@ cp -R $HOME/dotfiles/.fonts $HOME/.fonts
 echo "Wallpaper"
 cp $HOME/dotfiles/Pictures/fallout.jpg $HOME/Pictures/fallout.jpg
 
+echo "Git Custom Scripts"
+ln -s $HOME/dotfiles/git/git-prp $HOME/bin/git-prp
+
 echo "Fixing right"
 chown -R pixelcake:pixelcake ~/.local
 
