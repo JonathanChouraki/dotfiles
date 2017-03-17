@@ -3,5 +3,11 @@
 	email = jonathan.chouraki@gmail.com
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore_global
 [push]
 	default = simple
+[alias]
+	co = checkout
+	c = commit
+	s = status
+	a = add
