@@ -24,7 +24,7 @@
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
-(set-frame-font "Inconsolata 12")
+(set-frame-font "Fira Mono for Powerline 11")
 (setq inhibit-splash-screen t
       inhibit-startup-message t
       inhibit-startup-echo-area-message t)
