@@ -22,6 +22,7 @@ Plugin 'StanAngeloff/php.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'vim-scripts/vim-auto-save'
+Plugin 'nelsyeung/twig.vim'
 Plugin 'editorconfig/editorconfig-vim'
 call vundle#end()
 filetype plugin indent on
