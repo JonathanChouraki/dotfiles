@@ -4,14 +4,17 @@ clear
 
 echo "Adding PPA..."
 echo "Neovim"
-add-apt-repository ppa:neovim-ppa/unstable
+sudo add-apt-repository ppa:neovim-ppa/unstable
 
 echo "Moka icons"
 sudo add-apt-repository ppa:moka/daily
 
+echo "Emacs"
+sudo add-apt-repository ppa:kelleyk/emacs
+
 echo "Updating & Installing..."
-apt-get update
-apt-get install git zsh neovim feh lxappearance compton rofi i3 i3blocks tmux arc-theme moka-icon-theme curl
+sudo apt-get update
+sudo apt-get install git zsh neovim feh lxappearance compton rofi i3 i3blocks tmux arc-theme moka-icon-theme curl emacs25
 
 echo "Vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
