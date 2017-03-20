@@ -15,9 +15,6 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(require 'init-global)
-(require 'init-php)
-(require 'init-evil)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -38,3 +35,7 @@
  '(elscreen-tab-display-control nil)
  '(elscreen-tab-display-kill-screen nil)
  '(elscreen-tab-other-screen-face ((t (:background "gray40" :foreground "gray90")))))
+
+(require 'init-global)
+(require 'init-php)
+(require 'init-evil)
