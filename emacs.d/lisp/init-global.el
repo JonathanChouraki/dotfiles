@@ -24,6 +24,15 @@
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
+(use-package powerline
+  :ensure t
+  :config)
+
+(use-package airline-themes
+  :ensure t
+  :config
+  (load-theme 'airline-kolor))
+
 (set-frame-font "Fira Mono for Powerline 11")
 (setq inhibit-splash-screen t
       inhibit-startup-message t
