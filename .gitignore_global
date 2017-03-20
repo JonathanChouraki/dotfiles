@@ -6,6 +6,17 @@ nohup.out
 [._]sw[a-p]
 # session
 Session.vim
+*.desktop
 *~
 # auto-generated tag files
 tags
+
+# emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
