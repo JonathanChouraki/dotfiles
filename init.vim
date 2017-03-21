@@ -99,6 +99,11 @@ nnoremap <leader>s :vsplit <cr>
 nnoremap <leader>h :split <cr>
 " open tab
 nnoremap <leader>t :tabnew <cr>
+" bind W to w
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
 let base16colorspace=256
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 execute "set background=dark"
