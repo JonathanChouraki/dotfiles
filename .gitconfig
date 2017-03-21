@@ -13,3 +13,4 @@
 	a = add
     ph = push
     pl = pull
+    ck = checkout
