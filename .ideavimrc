@@ -42,14 +42,6 @@ nnoremap <leader><space> :noh<cr>
 " move to the corresponding parens, curly brace, etc
 nnoremap <tab> %
 vnoremap <tab> %
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 " shortcut to move between buffers
