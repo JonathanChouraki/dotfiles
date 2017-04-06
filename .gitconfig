@@ -11,6 +11,7 @@
 	c = commit
 	s = status
 	a = add
+    ap = add --patch
     ph = push
     pl = pull
     ck = checkout
