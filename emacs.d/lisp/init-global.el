@@ -33,10 +33,15 @@
   :config
   (load-theme 'airline-kolor))
 
+(use-package haskell-mode
+  :ensure t
+  :config)
+
 (setq user-full-name "Jonathan Chouraki"
       user-mail-address "jonathan.chouraki@gmail.com")
 
-(set-frame-font "Fira Mono for Powerline 11")
+(set-frame-font "Fira Mono for Powerline 10")
+(add-to-list 'default-frame-alist '(font . "Fira Mono for Powerline 10"))
 (setq inhibit-splash-screen t
       inhibit-startup-message t
       inhibit-startup-echo-area-message t)

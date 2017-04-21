@@ -188,19 +188,22 @@ bar {
         }
 }
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Fira Mono for Powerline 18"
-
-exec_always feh --bg-scale /home/pixelcake/Pictures/fallout.jpg
-exec_always setxkbmap -option caps:escape
-exec --no-startup-id compton -f
-exec_always /usr/bin/numlockx on
-
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
+# start dmenu (a program launcher)
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Fira Mono for Powerline 18"
+
+# Custom starting scripts
+exec_always feh --bg-scale /home/pixelcake/Pictures/fallout.jpg
+exec_always setxkbmap -option caps:escape
+exec --no-startup-id compton -f
+exec_always /usr/bin/numlockx on
+exec_always emacs --daemon
+
 # Custom keybind
 bindsym $mod+Shift+f exec "chromium-browser"
 focus_follows_mouse no
+bindsym $mod+m exec "emacsclient -c"
