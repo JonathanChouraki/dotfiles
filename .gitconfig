@@ -1,6 +1,6 @@
 [user]
 	name = Jonathan Chouraki
-	email = jonathan.chouraki@quatrecentquatre.com
+	email = jonathan.chouraki@gmail.com
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
