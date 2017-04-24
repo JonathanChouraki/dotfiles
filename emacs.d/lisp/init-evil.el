@@ -24,7 +24,8 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   (define-key evil-normal-state-map (kbd "gl") 'windmove-right)
   (define-key evil-normal-state-map (kbd "gh") 'windmove-left)
   (define-key evil-normal-state-map (kbd "gk") 'windmove-up)
-  (define-key evil-normal-state-map (kbd "gj") 'windmove-down))
+  (define-key evil-normal-state-map (kbd "gj") 'windmove-down)
+  (define-key evil-normal-state-map (kbd "TAB") 'evil-jump-item))
 
 (defun my/evil-leader-config ()
   "my evil leader configuration"
