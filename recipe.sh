@@ -4,7 +4,7 @@ clear
 
 echo "Adding PPA..."
 echo "Neovim"
-sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo add-apt-repository ppa:neovim-ppa/stable
 
 echo "Moka icons"
 sudo add-apt-repository ppa:moka/daily
