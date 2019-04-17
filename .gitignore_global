@@ -20,3 +20,5 @@ TAGS
 auto-save-list
 tramp
 .\#*
+.idea/
+.vscode/launch.json
