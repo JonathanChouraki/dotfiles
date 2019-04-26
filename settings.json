@@ -1,0 +1,91 @@
+{
+    "editor.lineNumbers": "relative",
+    "vim.easymotion": true,
+    "vim.foldfix": true,
+    "vim.leader": ",",
+    "vim.substituteGlobalFlag": true,
+    "vim.useSystemClipboard": true,
+    "vim.visualstar": true,
+    "keyboard.dispatch": "keyCode",
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.minimap.enabled": false,
+    "files.autoSave": "off",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.navigateLeft"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.navigateRight"
+            ]
+        },
+        {
+            "before": [
+                "<tab>"
+            ],
+            "commands": [
+                "editor.action.jumpToBracket"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.splitEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "<space>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "<C-b>"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        }
+    ],
+    "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "vim.hlsearch": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "files.trimTrailingWhitespace": true,
+    "explorer.confirmDragAndDrop": false,
+    "eslint.autoFixOnSave": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "elm.analyseEnabled": true,
+    "[elm]": {
+        "editor.formatOnSave": true
+    },
+    "window.titleBarStyle": "custom",
+    "liveshare.featureSet": "insiders",
+    "editor.tabSize": 2,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.associations": {
+        "*.js": "javascript"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "vim.camelCaseMotion.enable": true,
+    "vim.changeWordIncludesWhitespace": true
+}
