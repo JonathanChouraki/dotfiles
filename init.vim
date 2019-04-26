@@ -20,10 +20,15 @@ Plugin 'godlygeek/csapprox'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'othree/yajs.vim'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'nelsyeung/twig.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'rust-lang/rust.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'scrooloose/nerdcommenter'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -114,7 +119,7 @@ let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 let g:auto_save_silent = 1  " do not display the auto-save notification
 "NerdTree binded o ctrl-n
 map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
@@ -126,3 +131,4 @@ let g:lightline = {
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }
+let g:jsx_ext_required = 0
