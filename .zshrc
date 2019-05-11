@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/pixelcake/.oh-my-zsh
+export ZSH=/home/box/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -49,20 +49,26 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, vi-mode, ubuntu)
-
+plugins=(
+	git
+	vi-mode
+	docker
+	docker-compose
+)
 # User configuration
 
-export PATH="/home/pixelcake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+export PATH="/home/box/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
-BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -85,8 +91,25 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+alias dc="docker-compose"
+alias d="docker"
+alias dce="docker-compose exec"
+alias dcl="docker-compose logs -f"
+alias dcu="docker-compose up -d"
+alias dcub="docker-compose up -d --build"
+alias docker_clean_images='docker rmi $(docker images -a --filter=dangling=true -q)'
+alias pacs="sudo pacman -Syu"
+alias pacd="sudo pacman -D"
+alias vim="nvim"
+alias vi="nvim"
+alias v="nvim"
+alias vci="nvim ~/.config/i3/config"
+alias vcv="nvim ~/.vimrc"
+alias vcz="nvim ~/.zshrc"
 bindkey -v
 export KEYTIMEOUT=1
+
+# launch startx automatically
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+    exec startx
+fi
