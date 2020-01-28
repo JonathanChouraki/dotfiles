@@ -27,7 +27,7 @@ ZSH_THEME="avit"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -49,15 +49,11 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	git
-	vi-mode
-	docker
-	docker-compose
-)
+plugins=(git vi-mode docker docker-compose)
 # User configuration
 
-export PATH="/home/box/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+export PATH="/home/box/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/box/.local/bin"
+export GOPATH=$HOME/go
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -97,9 +93,11 @@ alias dce="docker-compose exec"
 alias dcl="docker-compose logs -f"
 alias dcu="docker-compose up -d"
 alias dcub="docker-compose up -d --build"
+alias dcul="docker-compose up -d && dcl"
 alias docker_clean_images='docker rmi $(docker images -a --filter=dangling=true -q)'
 alias pacs="sudo pacman -Syu"
 alias pacd="sudo pacman -D"
+alias pacr="sudo pacman -R"
 alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
@@ -113,3 +111,7 @@ export KEYTIMEOUT=1
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     exec startx
 fi
+
+#fix for docker / docker-compose autocompletion
+autoload -Uz compinit
+compinit
