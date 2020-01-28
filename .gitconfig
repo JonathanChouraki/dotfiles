@@ -13,5 +13,7 @@
 	a = add
     ap = add --patch
     ph = push
+    phu = push -u origin HEAD
     pl = pull
     ck = checkout
+    sw = switch -c
