@@ -111,7 +111,3 @@ export KEYTIMEOUT=1
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     exec startx
 fi
-
-#fix for docker / docker-compose autocompletion
-autoload -Uz compinit
-compinit
