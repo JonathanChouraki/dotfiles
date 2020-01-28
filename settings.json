@@ -7,7 +7,7 @@
     "vim.useSystemClipboard": true,
     "vim.visualstar": true,
     "keyboard.dispatch": "keyCode",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Palenight Theme",
     "editor.minimap.enabled": false,
     "files.autoSave": "off",
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -87,5 +87,23 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "vim.camelCaseMotion.enable": true,
-    "vim.changeWordIncludesWhitespace": true
+    "vim.changeWordIncludesWhitespace": true,
+    "editor.fontFamily": "'Fira Mono For Powerline', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "explorer.confirmDelete": false,
+    "emmet.includeLanguages": {
+        "javascriptreact": "html",
+        "javascript": "html",
+    },
+    "workbench.editor.enablePreview": false,
+    "editor.fontWeight": "500",
+    "oneDarkPro.editorTheme": "Onedark Pro",
+    "go.autocompleteUnimportedPackages": true,
+    "window.zoomLevel": 0,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.formatOnPaste": true,
+    "haskell.indentationRules.enabled": false,
+    "ghcid.command": "/home/box/.local/bin/ghcid",
+    "haskell.hlint.executablePath": "/home/box/.local/bin/hlint"
 }
