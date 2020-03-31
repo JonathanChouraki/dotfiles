@@ -22,3 +22,6 @@ tramp
 .\#*
 .idea/
 .vscode/launch.json
+.DS_Store
+node_modules/
+.elixir_ls/
