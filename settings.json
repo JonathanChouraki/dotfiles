@@ -105,5 +105,7 @@
     "editor.formatOnPaste": true,
     "haskell.indentationRules.enabled": false,
     "ghcid.command": "/home/box/.local/bin/ghcid",
-    "haskell.hlint.executablePath": "/home/box/.local/bin/hlint"
+    "haskell.hlint.executablePath": "/home/box/.local/bin/hlint",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true
 }
