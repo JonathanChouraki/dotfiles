@@ -17,3 +17,5 @@
     pl = pull
     ck = checkout
     sw = switch -c
+[pull]
+	rebase = true
