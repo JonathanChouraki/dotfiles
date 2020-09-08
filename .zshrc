@@ -52,7 +52,7 @@ ENABLE_CORRECTION="true"
 plugins=(git vi-mode docker docker-compose)
 # User configuration
 
-export PATH="/home/box/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/box/.local/bin"
+export PATH="/home/box/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/box/.local/bin:/home/box/.npm-global/bin"
 export GOPATH=$HOME/go
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -106,8 +106,15 @@ alias vcv="nvim ~/.vimrc"
 alias vcz="nvim ~/.zshrc"
 bindkey -v
 export KEYTIMEOUT=1
-
+bindkey '^xe' edit-command-line
+bindkey '^x^e' edit-command-line
+# make CapsLock behave like Ctrl:
+setxkbmap -option ctrl:nocaps
+# make short-pressed Ctrl behave like Escape:
+xcape -e 'Control_L=Escape'
 # launch startx automatically
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     exec startx
 fi
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
