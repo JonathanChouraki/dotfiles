@@ -28,9 +28,10 @@ Plugin 'mxw/vim-jsx'
 Plugin 'rust-lang/rust.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'dylanaraps/wal.vim'
 
 call vundle#end()
-filetype plugin indent on
+filetype off
 
 " Editor configuration
 set nocompatible
@@ -69,8 +70,8 @@ set guioptions-=t
 set guioptions-=T
 set guioptions-=r
 set guioptions-=L
-set termguicolors
-:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+"set termguicolors
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 " Keybind
 let mapleader = ","
