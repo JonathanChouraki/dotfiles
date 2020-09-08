@@ -9,7 +9,6 @@
     "keyboard.dispatch": "keyCode",
     "workbench.colorTheme": "Palenight Theme",
     "editor.minimap.enabled": false,
-    "files.autoSave": "off",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
@@ -70,7 +69,6 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "files.trimTrailingWhitespace": true,
     "explorer.confirmDragAndDrop": false,
-    "eslint.autoFixOnSave": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "elm.analyseEnabled": true,
     "[elm]": {
@@ -88,24 +86,42 @@
     },
     "vim.camelCaseMotion.enable": true,
     "vim.changeWordIncludesWhitespace": true,
-    "editor.fontFamily": "'Fira Mono For Powerline', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'FuraMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "explorer.confirmDelete": false,
     "emmet.includeLanguages": {
+        "twig": "html",
         "javascriptreact": "html",
         "javascript": "html",
     },
     "workbench.editor.enablePreview": false,
-    "editor.fontWeight": "500",
+    "editor.fontWeight": "700",
     "oneDarkPro.editorTheme": "Onedark Pro",
     "go.autocompleteUnimportedPackages": true,
     "window.zoomLevel": 0,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "editor.formatOnPaste": true,
-    "haskell.indentationRules.enabled": false,
     "ghcid.command": "/home/box/.local/bin/ghcid",
     "haskell.hlint.executablePath": "/home/box/.local/bin/hlint",
     "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true
+    "files.trimFinalNewlines": true,
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "vim.enableNeovim": true,
+    "vscode-neovim.mouseSelectionStartVisualMode": true,
+    "vim.neovimPath": "/usr/bin/nvim",
+    "vscode-neovim.neovimPath": "/usr/bin/nvim",
+    "vscode-neovim.neovimInitPath": "/home/box/.config/nvim/init.vim",
+    "autoimport.higherOrderComponents": "connect|withRouter|withUser",
+    "purescript.addNpmPath": true,
+    "purescript.addSpagoSources": true,
+    "purescript.buildCommand": "/home/box/.npm-global/bin/spago build --purs-args --json-errors",
+    "editor.suggestSelection": "first",
+    "editor.fontSize": 16,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "sass.format.setPropertySpace": false,
+    "eslint.packageManager": "yarn",
+    "eslint.format.enable": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false
 }
